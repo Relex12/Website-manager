@@ -1,0 +1,13 @@
+---
+---
+
+@import "plain";
+
+{% if site.search %}
+  @import "search";
+{% endif %}
+
+{%- if site.dark_mode -%}
+  @import "toggle";
+  @import "dark";
+{%- endif -%}

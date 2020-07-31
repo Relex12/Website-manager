@@ -1,0 +1,11 @@
+- Nettoyer _config.yml
+- Ancrer la barre latérale (problème de trop d'éléments)
+- Dark mode
+- renommer include About.html en sidebar.html
+- Ajouter la couche default à la page 404
+  - Changer le CSS à la volée pour un id
+- Faire un footer
+- Modifier la couche Page
+  - Afficher l'arborescence
+  - Afficher les sous-pages de la page actuelle
+- Modifier la couche Default (<div class="post-container">    <div class="post">) pour décaler le contenu

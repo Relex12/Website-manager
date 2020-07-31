@@ -1,0 +1,109 @@
+title: Relex12
+author: Adrian Bonnet
+email: relex12@free.fr
+description: > # this means to ignore newlines until "show_exerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
+
+# Reformat this section, see what is needed
+name: Adrian Bonnet
+tagline: IT Engineer
+dark_mode: true # set to true to add dark mode toggle
+portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
+html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
+
+
+# attention, trop d'éléments rend mal, faire une modification CSS si possible
+navigation:
+  - url: /
+    title: Home
+  - url: /Projects
+    title: Projects
+  - url: /JSPages
+    title: Javascript Pages
+  - url: /Aboutme
+    title: About Me
+
+# sons:
+# - url: /Projects/Word_machine
+#   title: Word Machine
+#   categories: Projects
+#   sons:
+#     - url: /Projects/Word_machine/Doc
+#       title: Doc
+#       categories: Projects Word_machine
+# - url: /Projects/Genex
+#   title: Genex
+
+# projects:
+#   - url: /word_machine
+#     title: Word Machine
+#   - url: /Genex
+#     title: Genex
+#
+# jspages:
+
+
+# à compléter
+exclude:
+  - Gemfile
+  - LICENSE.txt
+  - plainwhite.gemspec
+  - README.md
+  - search.json
+  - sitemap.xml
+
+
+# generate social links in sidebar
+social_links:
+  github:  Relex12
+  linkedIn: in/adrian-bonnet-897b6218a
+
+# Build settings
+theme: plainwhite
+
+
+
+
+###################
+# Unused features #
+###################
+
+# plugins:
+#   - jekyll-seo-tag
+#  - jekyll-feed
+
+# social_links:
+  # twitter: thelehhman
+  # rss: rss
+  # dribbble: jekyll
+  # flickr:   jekyll
+  # instagram: jekyll
+  # pinterest: jekyll
+  # youtube: jekyll
+  # facebook: jekyll
+  # soundcloud: jekyll
+  # telegram: jekyll
+  # gitlab: jekyll
+
+# mastodon:
+# - username: jekyll
+#   instance: example.com
+# - username: jekyll2
+#   instance: example.com
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# show_excerpts: true # set to true to show excerpts on the homepage
+
+# date_format: "%b %-d, %Y"
+# sitemap: true # set to true to generate sitemap.xml content
+# search: true # set to true to enable searchbar
