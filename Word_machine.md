@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Word Machine"
 permalink: /Projects/Word_machine
 ---
