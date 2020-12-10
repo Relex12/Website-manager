@@ -3,10 +3,13 @@
 - rédiger le footer
 - jekyll ignore les fichiers qui doivent l'être (voir _site/)
 - mettre à jour / importer les fichiers
-- se passer de plainwhite.gemspec
 - créer une architecture nouvelle pour le site
 - changer les émojis dans index.md (Relex12/readme.md)
 - changer les layouts qui n'existent plus
+
+------
+
+- se passer de plainwhite.gemspec
 
 ------
 Dans un second temps
