@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Mon site"
+title: "Relex12 - Adrian Bonnet"
 ---
 # Hi there 👋
 

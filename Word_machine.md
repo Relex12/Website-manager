@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Word Machine"
-permalink: /Projects/Word_machine
+permalink: word-machine
 ---
 
 # Word machine
