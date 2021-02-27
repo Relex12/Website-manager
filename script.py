@@ -176,7 +176,7 @@ if (path.exists("../Maths_for_IT/")):
     front_matter = """---
 layout: default
 title: "Maths for IT"
-permalink: fr/Maths_for_IT
+permalink: fr/Maths-for-IT
 ---
 
 """
