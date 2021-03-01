@@ -111,7 +111,6 @@ permalink: fr/Languages/GDB
 
 ## Markdown
 
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Languages/Examples/Markdown.md")
     input_file = open("../Languages/Examples/Markdown.md", 'r')
     front_matter = """---
 layout: default
