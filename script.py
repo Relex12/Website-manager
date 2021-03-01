@@ -109,6 +109,20 @@ permalink: fr/Languages/GDB
     output_file = open("../Relex12.github.io/Languages.GDB.md", 'w')
     output_file.write(front_matter + input_file.read())
 
+## Markdown
+
+    system("python3 ../Markdown-Table-of-Contents/toc.py ../Languages/Examples/Markdown.md")
+    input_file = open("../Languages/Examples/Markdown.md", 'r')
+    front_matter = """---
+layout: default
+title: "Markdown"
+permalink: fr/Languages/Markdown
+---
+
+"""
+    output_file = open("../Relex12.github.io/Languages.Markdown.md", 'w')
+    output_file.write(front_matter + input_file.read())
+
 ## JavaScript
 
     system("python3 ../Markdown-Table-of-Contents/toc.py ../Languages/Sheets/JavaScript.md")
