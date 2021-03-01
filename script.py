@@ -138,6 +138,18 @@ permalink: Lining-draw
     output_file = open("../Relex12.github.io/Lining-draw.md", 'w')
     output_file.write(front_matter + input_file.read())
 
+    system("python3 ../Markdown-Table-of-Contents/toc.py ../Lining-draw/README-fr.md")
+    input_file = open("../Lining-draw/README-fr.md", 'r')
+    front_matter = """---
+layout: default
+title: "Lining draw"
+permalink: fr/Lining-draw
+---
+
+"""
+    output_file = open("../Relex12.github.io/Lining-draw-fr.md", 'w')
+    output_file.write(front_matter + input_file.read())
+
 # Loup-garou
 
 if (path.exists("../Loup-garou/")):
