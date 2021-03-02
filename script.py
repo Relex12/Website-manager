@@ -193,6 +193,18 @@ permalink: Markdown-Table-of-Contents
     output_file = open("../Relex12.github.io/Markdown-Table-of-Contents.md", 'w')
     output_file.write(front_matter + input_file.read())
 
+    system("python3 ../Markdown-Table-of-Contents/toc.py ../Markdown-Table-of-Contents/README-fr.md")
+    input_file = open("../Markdown-Table-of-Contents/README-fr.md", 'r')
+    front_matter = """---
+layout: default
+title: "Markdown Table of Contents"
+permalink: fr/Markdown-Table-of-Contents
+---
+
+"""
+    output_file = open("../Relex12.github.io/Markdown-Table-of-Contents-fr.md", 'w')
+    output_file.write(front_matter + input_file.read())
+
 # Maths_for_IT
 
 if (path.exists("../Maths_for_IT/")):
