@@ -6,366 +6,84 @@ if (not path.exists("../Relex12.github.io/")):
 if (not path.exists("../Markdown-Table-of-Contents/")):
     raise FileNotFoundError("Markdown-Table-of-Contents directory not found")
 
+#####################
+# FILES DECLARATION #
+#####################
 
-# Dictionaries
+files = [
+{"folder": "Dictionaries", "file":"README.md", "layout": "default",
+"title": "Dictionaries", "link": "Dictionaries", "output": "Dictionaries.md"},
+{"folder": "Dictionaries", "file":"README-fr.md", "layout": "default",
+"title": "Dictionaries", "link": "fr/Dictionaries", "output": "Dictionaries-fr.md"},
+{"folder": "Genex", "file":"README.md", "layout": "default",
+"title": "Genex", "link": "fr/Genex", "output": "Genex.md"},
+{"folder": "Introduction-to-Computer-Science", "file":"README.md", "layout": "default",
+"title": "Introduction to Computer Science", "link": "fr/Introduction-to-Computer-Science", "output": "Introduction-to-Computer-Science.md"},
+{"folder": "Languages", "file":"README.md", "layout": "default",
+"title": "Languages", "link": "fr/Languages", "output": "Languages.md"},
+{"folder": "Languages", "file":"Sheets/Bash-Unix.md", "layout": "default",
+"title": "Bash Unix", "link": "fr/Languages/Bash-Unix", "output": "Languages.Bash-Unix.md"},
+{"folder": "Languages", "file":"Sheets/DOT.md", "layout": "default",
+"title": "DOT", "link": "fr/Languages/DOT", "output": "Languages.DOT.md"},
+{"folder": "Languages", "file":"Sheets/Git.md", "layout": "default",
+"title": "Git", "link": "fr/Languages/Git", "output": "Languages.Git.md"},
+{"folder": "Languages", "file":"Sheets/GDB.md", "layout": "default",
+"title": "GDB", "link": "fr/Languages/GDB", "output": "Languages.GDB.md"},
+{"folder": "Languages", "file":"Examples/Markdown.md", "layout": "default",
+"title": "Markdown", "link": "fr/Languages/Markdown", "output": "Languages.Markdown.md"},
+{"folder": "Languages", "file":"Sheets/JavaScript.md", "layout": "default",
+"title": "JavaScript", "link": "fr/Languages/JavaScript", "output": "Languages.JavaScript.md"},
+{"folder": "Lining-draw", "file":"README.md", "layout": "default",
+"title": "Lining draw", "link": "Lining-draw", "output": "Lining-draw.md"},
+{"folder": "Lining-draw", "file":"README-fr.md", "layout": "default",
+"title": "Lining draw", "link": "fr/Lining-draw", "output": "Lining-draw-fr.md"},
+{"folder": "Loup-garou", "file":"README.md", "layout": "default",
+"title": "Loup-garou", "link": "fr/Loup-garou", "output": "Loup-garou.md"},
+{"folder": "Markdown-Table-of-Contents", "file":"README.md", "layout": "default",
+"title": "Markdown Table of Contents", "link": "Markdown-Table-of-Contents", "output": "Markdown-Table-of-Contents.md"},
+{"folder": "Markdown-Table-of-Contents", "file":"README-fr.md", "layout": "default",
+"title": "Markdown Table of Contents", "link": "fr/Markdown-Table-of-Contents", "output": "Markdown-Table-of-Contents-fr.md"},
+{"folder": "Maths-for-IT", "file":"README.md", "layout": "default",
+"title": "Maths for IT", "link": "Maths-for-IT", "output": "Maths-for-IT.md"},
+{"folder": "Relex12", "file":"README.md", "layout": "default",
+"title": "Relex12 - Adrian Bonnet", "link": "null", "output": "index.md"},
+{"folder": "Secret-Santa", "file":"README.md", "layout": "default",
+"title": "Secret Santa", "link": "fr/Secret-Santa", "output": "Secret-Santa.md"},
+{"folder": "Simple-Progress-Bar", "file":"README.md", "layout": "default",
+"title": "Simple Progress Bar", "link": "Simple-Progress-Bar", "output": "Simple-Progress-Bar.md"},
+{"folder": "Simple-Progress-Bar", "file":"README-fr.md", "layout": "default",
+"title": "Simple Progress Bar", "link": "fr/Simple-Progress-Bar", "output": "Simple-Progress-Bar-fr.md"},
+{"folder": "Voting-Systems-Comparison", "file":"README.md", "layout": "default",
+"title": "Voting Systems Comparison", "link": "fr/Voting-Systems-Comparison", "output": "Voting-Systems-Comparison.md"},
+{"folder": "Word-machine", "file":"README.md", "layout": "default",
+"title": "Word Machine", "link": "Word-machine", "output": "Word-machine.md"},
+{"folder": "Word-machine", "file":"doc/__init__.html", "layout": "null",
+"title": "Word Machine Doc", "link": "Word-machine/doc/init", "output": "Word-machine.doc.init.html"},
+{"folder": "Word-machine", "file":"doc/dictionary_processing.html", "layout": "null",
+"title": "Word Machine Doc", "link": "Word-machine/doc/dictionary-processing", "output": "Word-machine.doc.dictionary_processing.html"},
+{"folder": "Word-machine", "file":"doc/word_machine.html", "layout": "null",
+"title": "Word Machine Doc", "link": "Word-machine/doc/word-machine", "output": "Word-machine.doc.word_machine.html"},
 
-if (path.exists("../Dictionaries/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Dictionaries/README.md")
-    input_file = open("../Dictionaries/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Dictionaries"
-permalink: Dictionaries
+]
+
+
+####################
+# FILES GENERATION #
+####################
+
+for i in range(len(files)):
+    if (path.exists("../{}/".format(files[i]["folder"]))):
+        system("python3 ../Markdown-Table-of-Contents/toc.py ../{}/{}".format(files[i]["folder"], files[i]["file"]))
+        input_file = open("../{}/{}".format(files[i]["folder"], files[i]["file"]), 'r')
+        front_matter = """---
+layout: {}
+title: "{}"
+permalink: {}
 ---
 
-"""
-    output_file = open("../Relex12.github.io/Dictionaries.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Dictionaries/README-fr.md")
-    input_file = open("../Dictionaries/README-fr.md", 'r')
-    front_matter = """---
-layout: default
-title: "Dictionaries"
-permalink: fr/Dictionaries
----
-
-"""
-    output_file = open("../Relex12.github.io/Dictionaries-fr.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-# Genex
-
-if (path.exists("../Genex/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Genex/README.md")
-    input_file = open("../Genex/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Genex"
-permalink: fr/Genex
----
-
-"""
-    output_file = open("../Relex12.github.io/Genex.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-# Introduction-to-Computer-Science
-
-if (path.exists("../Introduction-to-Computer-Science/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Introduction-to-Computer-Science/README.md")
-    input_file = open("../Introduction-to-Computer-Science/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Introduction to Computer Science"
-permalink: fr/Introduction-to-Computer-Science
----
-
-"""
-    output_file = open("../Relex12.github.io/Introduction-to-Computer-Science.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-
-# Languages
-
-if (path.exists("../Languages/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Languages/README.md")
-    input_file = open("../Languages/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Languages"
-permalink: fr/Languages
----
-
-"""
-    output_file = open("../Relex12.github.io/Languages.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-## Bash-Unix
-
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Languages/Sheets/Bash-Unix.md")
-    input_file = open("../Languages/Sheets/Bash-Unix.md", 'r')
-    front_matter = """---
-layout: default
-title: "Bash Unix"
-permalink: fr/Languages/Bash-Unix
----
-
-"""
-    output_file = open("../Relex12.github.io/Languages.Bash-Unix.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-## DOT
-
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Languages/Sheets/DOT.md")
-    input_file = open("../Languages/Sheets/DOT.md", 'r')
-    front_matter = """---
-layout: default
-title: "DOT"
-permalink: fr/Languages/DOT
----
-
-"""
-    output_file = open("../Relex12.github.io/Languages.DOT.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-## Git
-
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Languages/Sheets/Git.md")
-    input_file = open("../Languages/Sheets/Git.md", 'r')
-    front_matter = """---
-layout: default
-title: "Git"
-permalink: fr/Languages/Git
----
-
-"""
-    output_file = open("../Relex12.github.io/Languages.Git.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-## GDB
-
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Languages/Sheets/GDB.md")
-    input_file = open("../Languages/Sheets/GDB.md", 'r')
-    front_matter = """---
-layout: default
-title: "GDB"
-permalink: fr/Languages/GDB
----
-
-"""
-    output_file = open("../Relex12.github.io/Languages.GDB.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-## Markdown
-
-    input_file = open("../Languages/Examples/Markdown.md", 'r')
-    front_matter = """---
-layout: default
-title: "Markdown"
-permalink: fr/Languages/Markdown
----
-
-"""
-    output_file = open("../Relex12.github.io/Languages.Markdown.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-## JavaScript
-
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Languages/Sheets/JavaScript.md")
-    input_file = open("../Languages/Sheets/JavaScript.md", 'r')
-    front_matter = """---
-layout: default
-title: "JavaScript"
-permalink: fr/Languages/JavaScript
----
-
-"""
-    output_file = open("../Relex12.github.io/Languages.JavaScript.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-# Lining-draw
-
-if (path.exists("../Lining-draw/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Lining-draw/README.md")
-    input_file = open("../Lining-draw/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Lining draw"
-permalink: Lining-draw
----
-
-"""
-    output_file = open("../Relex12.github.io/Lining-draw.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Lining-draw/README-fr.md")
-    input_file = open("../Lining-draw/README-fr.md", 'r')
-    front_matter = """---
-layout: default
-title: "Lining draw"
-permalink: fr/Lining-draw
----
-
-"""
-    output_file = open("../Relex12.github.io/Lining-draw-fr.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-# Loup-garou
-
-if (path.exists("../Loup-garou/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Loup-garou/README.md")
-    input_file = open("../Loup-garou/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Loup-garou"
-permalink: fr/Loup-garou
----
-
-"""
-    output_file = open("../Relex12.github.io/Loup-garou.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-# Markdown-Table-of-Contents
-
-if (path.exists("../Markdown-Table-of-Contents/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Markdown-Table-of-Contents/README.md")
-    input_file = open("../Markdown-Table-of-Contents/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Markdown Table of Contents"
-permalink: Markdown-Table-of-Contents
----
-
-"""
-    output_file = open("../Relex12.github.io/Markdown-Table-of-Contents.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Markdown-Table-of-Contents/README-fr.md")
-    input_file = open("../Markdown-Table-of-Contents/README-fr.md", 'r')
-    front_matter = """---
-layout: default
-title: "Markdown Table of Contents"
-permalink: fr/Markdown-Table-of-Contents
----
-
-"""
-    output_file = open("../Relex12.github.io/Markdown-Table-of-Contents-fr.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-# Maths_for_IT
-
-if (path.exists("../Maths_for_IT/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Maths_for_IT/README.md")
-    input_file = open("../Maths_for_IT/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Maths for IT"
-permalink: fr/Maths-for-IT
----
-
-"""
-    output_file = open("../Relex12.github.io/Maths_for_IT.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-# Relex12
-
-if (path.exists("../Relex12/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Relex12/README.md")
-    input_file = open("../Relex12/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Relex12 - Adrian Bonnet"
----
-
-"""
-    output_file = open("../Relex12.github.io/index.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-# Secret-Santa
-
-if (path.exists("../Secret-Santa/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Secret-Santa/README.md")
-    input_file = open("../Secret-Santa/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Secret Santa"
-permalink: fr/Secret-Santa
----
-
-"""
-    output_file = open("../Relex12.github.io/Secret-Santa.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-# Simple-Progress-Bar
-
-if (path.exists("../Simple-Progress-Bar/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Simple-Progress-Bar/README.md")
-    input_file = open("../Simple-Progress-Bar/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Simple-Progress-Bar"
-permalink: Simple-Progress-Bar
----
-
-"""
-    output_file = open("../Relex12.github.io/Simple-Progress-Bar.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Simple-Progress-Bar/README-fr.md")
-    input_file = open("../Simple-Progress-Bar/README-fr.md", 'r')
-    front_matter = """---
-layout: default
-title: "Simple-Progress-Bar"
-permalink: fr/Simple-Progress-Bar
----
-
-"""
-    output_file = open("../Relex12.github.io/Simple-Progress-Bar-fr.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-# Voting-Systems-Comparison
-
-if (path.exists("../Voting-Systems-Comparison/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Voting-Systems-Comparison/README.md")
-    input_file = open("../Voting-Systems-Comparison/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Voting Systems Comparison"
-permalink: fr/Voting-Systems-Comparison
----
-
-"""
-    output_file = open("../Relex12.github.io/Voting-Systems-Comparison.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-# Word_machine
-
-if (path.exists("../Word_machine/")):
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Word_machine/README.md")
-    input_file = open("../Word_machine/README.md", 'r')
-    front_matter = """---
-layout: default
-title: "Word Machine"
-permalink: Word-machine
----
-
-"""
-    output_file = open("../Relex12.github.io/Word_machine.md", 'w')
-    output_file.write(front_matter + input_file.read())
-
-## Init
-
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Word_machine/doc/__init__.html")
-    input_file = open("../Word_machine/doc/__init__.html", 'r')
-    front_matter = """---
-title: "Word Machine Doc"
-permalink: Word-machine/doc/init
----
-
-"""
-    output_file = open("../Relex12.github.io/Word_machine.doc.init.html", 'w')
-    output_file.write(front_matter + input_file.read())
-
-## Dictionary processing
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Word_machine/doc/dictionary_processing.html")
-    input_file = open("../Word_machine/doc/dictionary_processing.html", 'r')
-    front_matter = """---
-title: "Word Machine Doc"
-permalink: Word-machine/doc/dictionary-processing
----
-
-"""
-    output_file = open("../Relex12.github.io/Word_machine.doc.dictionary_processing.html", 'w')
-    output_file.write(front_matter + input_file.read())
-
-## Word machine
-    system("python3 ../Markdown-Table-of-Contents/toc.py ../Word_machine/doc/word_machine.html")
-    input_file = open("../Word_machine/doc/word_machine.html", 'r')
-    front_matter = """---
-title: "Word Machine Doc"
-permalink: Word-machine/doc/word-machine
----
-
-"""
-    output_file = open("../Relex12.github.io/Word_machine.doc.word_machine.html", 'w')
-    output_file.write(front_matter + input_file.read())
+""".format(files[i]["layout"], files[i]["title"], files[i]["link"], )
+        output_file = open("../Relex12.github.io/{}".format(files[i]["output"]), 'w')
+        print(files[i]["output"])
+        output_file.write(front_matter + input_file.read())
+    else:
+        print("Cannot create {}, {}/{} is missing.".format(files[i]["output"], files[i]["folder"], files[i]["file"]) )
