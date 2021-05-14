@@ -7,6 +7,33 @@ if (not path.exists("../Markdown-Table-of-Contents/")):
     raise FileNotFoundError("Markdown-Table-of-Contents directory not found")
 
 
+# Dictionaries
+
+if (path.exists("../Dictionaries/")):
+    system("python3 ../Markdown-Table-of-Contents/toc.py ../Dictionaries/README.md")
+    input_file = open("../Dictionaries/README.md", 'r')
+    front_matter = """---
+layout: default
+title: "Dictionaries"
+permalink: Dictionaries
+---
+
+"""
+    output_file = open("../Relex12.github.io/Dictionaries.md", 'w')
+    output_file.write(front_matter + input_file.read())
+
+    system("python3 ../Markdown-Table-of-Contents/toc.py ../Dictionaries/README-fr.md")
+    input_file = open("../Dictionaries/README-fr.md", 'r')
+    front_matter = """---
+layout: default
+title: "Dictionaries"
+permalink: fr/Dictionaries
+---
+
+"""
+    output_file = open("../Relex12.github.io/Dictionaries-fr.md", 'w')
+    output_file.write(front_matter + input_file.read())
+
 # Genex
 
 if (path.exists("../Genex/")):
@@ -247,6 +274,33 @@ permalink: fr/Secret-Santa
 
 """
     output_file = open("../Relex12.github.io/Secret-Santa.md", 'w')
+    output_file.write(front_matter + input_file.read())
+
+# Simple-Progress-Bar
+
+if (path.exists("../Simple-Progress-Bar/")):
+    system("python3 ../Markdown-Table-of-Contents/toc.py ../Simple-Progress-Bar/README.md")
+    input_file = open("../Simple-Progress-Bar/README.md", 'r')
+    front_matter = """---
+layout: default
+title: "Simple-Progress-Bar"
+permalink: Simple-Progress-Bar
+---
+
+"""
+    output_file = open("../Relex12.github.io/Simple-Progress-Bar.md", 'w')
+    output_file.write(front_matter + input_file.read())
+
+    system("python3 ../Markdown-Table-of-Contents/toc.py ../Simple-Progress-Bar/README-fr.md")
+    input_file = open("../Simple-Progress-Bar/README-fr.md", 'r')
+    front_matter = """---
+layout: default
+title: "Simple-Progress-Bar"
+permalink: fr/Simple-Progress-Bar
+---
+
+"""
+    output_file = open("../Relex12.github.io/Simple-Progress-Bar-fr.md", 'w')
     output_file.write(front_matter + input_file.read())
 
 # Voting-Systems-Comparison

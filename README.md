@@ -1,4 +1,4 @@
-# mywebsite_jekyll
+# Website manager
 
 Script to auto push in my Relex12.github.io repo pages from all my others repos.
 
