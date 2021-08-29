@@ -11,6 +11,8 @@ if (not path.exists("../Markdown-Table-of-Contents/")):
 #####################
 
 files = [
+{"folder": "Decentralized-Password-Manager", "file":"README.md", "layout": "default",
+"title": "Decentralized-Password-Manager", "link": "Decentralized-Password-Manager", "output": "Decentralized-Password-Manager.md"},
 {"folder": "Dictionaries", "file":"README.md", "layout": "default",
 "title": "Dictionaries", "link": "Dictionaries", "output": "Dictionaries.md"},
 {"folder": "Dictionaries", "file":"README-fr.md", "layout": "default",
@@ -55,6 +57,14 @@ files = [
 "title": "Simple Progress Bar", "link": "fr/Simple-Progress-Bar", "output": "Simple-Progress-Bar-fr.md"},
 {"folder": "Voting-Systems-Comparison", "file":"README.md", "layout": "default",
 "title": "Voting Systems Comparison", "link": "fr/Voting-Systems-Comparison", "output": "Voting-Systems-Comparison.md"},
+{"folder": "Voting-Systems-Simulation", "file":"README.md", "layout": "default",
+"title": "Voting Systems Simulation", "link": "Voting-Systems-Simulation", "output": "Voting-Systems-Simulation.md"},
+{"folder": "Voting-Systems-Simulation", "file":"README-fr.md", "layout": "default",
+"title": "Voting Systems Simulation", "link": "fr/Voting-Systems-Simulation", "output": "Voting-Systems-Simulation-fr.md"},
+{"folder": "Voting-Systems-Simulation", "file":"doc/simulation.html", "layout": "null",
+"title": "Voting Systems Simulation Doc", "link": "Voting-Systems-Simulation/doc/simulation", "output": "Voting-Systems-Simulation.doc.simulation.html"},
+{"folder": "Voting-Systems-Simulation", "file":"doc/voting.html", "layout": "null",
+"title": "Voting Systems Simulation Doc", "link": "Voting-Systems-Simulation/doc/voting", "output": "Voting-Systems-Simulation.doc.voting.html"},
 {"folder": "Word-machine", "file":"README.md", "layout": "default",
 "title": "Word Machine", "link": "Word-machine", "output": "Word-machine.md"},
 {"folder": "Word-machine", "file":"doc/__init__.html", "layout": "null",
