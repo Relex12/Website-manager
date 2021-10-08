@@ -12,7 +12,7 @@ if (not path.exists("../Markdown-Table-of-Contents/")):
 
 files = [
 {"folder": "Decentralized-Password-Manager", "file":"README.md", "layout": "default",
-"title": "Decentralized-Password-Manager", "link": "Decentralized-Password-Manager", "output": "Decentralized-Password-Manager.md"},
+"title": "Decentralized-Password-Manager", "link": "fr/Decentralized-Password-Manager", "output": "Decentralized-Password-Manager.md"},
 {"folder": "Dictionaries", "file":"README.md", "layout": "default",
 "title": "Dictionaries", "link": "Dictionaries", "output": "Dictionaries.md"},
 {"folder": "Dictionaries", "file":"README-fr.md", "layout": "default",
@@ -46,7 +46,7 @@ files = [
 {"folder": "Markdown-Table-of-Contents", "file":"README-fr.md", "layout": "default",
 "title": "Markdown Table of Contents", "link": "fr/Markdown-Table-of-Contents", "output": "Markdown-Table-of-Contents-fr.md"},
 {"folder": "Maths-for-IT", "file":"README.md", "layout": "default",
-"title": "Maths for IT", "link": "Maths-for-IT", "output": "Maths-for-IT.md"},
+"title": "Maths for IT", "link": "fr/Maths-for-IT", "output": "Maths-for-IT.md"},
 {"folder": "Relex12", "file":"README.md", "layout": "default",
 "title": "Relex12 - Adrian Bonnet", "link": "null", "output": "index.md"},
 {"folder": "Secret-Santa", "file":"README.md", "layout": "default",
@@ -65,6 +65,8 @@ files = [
 "title": "Voting Systems Simulation Doc", "link": "Voting-Systems-Simulation/doc/simulation", "output": "Voting-Systems-Simulation.doc.simulation.html"},
 {"folder": "Voting-Systems-Simulation", "file":"doc/voting.html", "layout": "null",
 "title": "Voting Systems Simulation Doc", "link": "Voting-Systems-Simulation/doc/voting", "output": "Voting-Systems-Simulation.doc.voting.html"},
+{"folder": "Website-manager", "file":"README.md", "layout": "default",
+"title": "Website manager", "link": "Website-manager", "output": "Website-manager.md"},
 {"folder": "Word-machine", "file":"README.md", "layout": "default",
 "title": "Word Machine", "link": "Word-machine", "output": "Word-machine.md"},
 {"folder": "Word-machine", "file":"doc/__init__.html", "layout": "null",
@@ -73,7 +75,6 @@ files = [
 "title": "Word Machine Doc", "link": "Word-machine/doc/dictionary-processing", "output": "Word-machine.doc.dictionary_processing.html"},
 {"folder": "Word-machine", "file":"doc/word_machine.html", "layout": "null",
 "title": "Word Machine Doc", "link": "Word-machine/doc/word-machine", "output": "Word-machine.doc.word_machine.html"},
-
 ]
 
 
