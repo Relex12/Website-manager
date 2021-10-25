@@ -69,12 +69,12 @@ files = [
 "title": "Website manager", "link": "Website-manager", "output": "Website-manager.md"},
 {"folder": "Word-machine", "file":"README.md", "layout": "default",
 "title": "Word Machine", "link": "Word-machine", "output": "Word-machine.md"},
-{"folder": "Word-machine", "file":"doc/__init__.html", "layout": "null",
-"title": "Word Machine Doc", "link": "Word-machine/doc/init", "output": "Word-machine.doc.init.html"},
-{"folder": "Word-machine", "file":"doc/dictionary_processing.html", "layout": "null",
-"title": "Word Machine Doc", "link": "Word-machine/doc/dictionary-processing", "output": "Word-machine.doc.dictionary_processing.html"},
-{"folder": "Word-machine", "file":"doc/word_machine.html", "layout": "null",
-"title": "Word Machine Doc", "link": "Word-machine/doc/word-machine", "output": "Word-machine.doc.word_machine.html"},
+{"folder": "Word-machine", "file":"doc/dictionary.html", "layout": "null",
+"title": "Word Machine Doc", "link": "Word-machine/doc/dictionary", "output": "Word-machine.doc.dictionary.html"},
+{"folder": "Word-machine", "file":"doc/generation.html", "layout": "null",
+"title": "Word Machine Doc", "link": "Word-machine/doc/generation", "output": "Word-machine.doc.generation.html"},
+{"folder": "Word-machine", "file":"doc/word-machine.html", "layout": "null",
+"title": "Word Machine Doc", "link": "Word-machine/doc/word-machine", "output": "Word-machine.doc.word-machine.html"},
 ]
 
 
