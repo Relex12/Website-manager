@@ -27,6 +27,8 @@ files = [
 "title": "Bash Unix", "link": "fr/Languages/Bash-Unix", "output": "Languages.Bash-Unix.md"},
 {"folder": "Languages", "file":"Sheets/DOT.md", "layout": "default",
 "title": "DOT", "link": "fr/Languages/DOT", "output": "Languages.DOT.md"},
+{"folder": "Languages", "file":"Sheets/Docker.md", "layout": "default",
+"title": "Docker", "link": "fr/Languages/Docker", "output": "Languages.Docker.md"},
 {"folder": "Languages", "file":"Sheets/Git.md", "layout": "default",
 "title": "Git", "link": "fr/Languages/Git", "output": "Languages.Git.md"},
 {"folder": "Languages", "file":"Sheets/GDB.md", "layout": "default",
