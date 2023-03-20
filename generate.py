@@ -13,6 +13,8 @@ if (not path.exists("../Markdown-Table-of-Contents/")):
 files = [
 {"folder": "Decentralized-Password-Manager", "file":"README.md", "layout": "default",
 "title": "Decentralized-Password-Manager", "link": "fr/Decentralized-Password-Manager", "output": "Decentralized-Password-Manager.md"},
+{"folder": "Decentralized-Password-Manager", "file":"readme/01-FR-comparatif.md", "layout": "default",
+"title": "Comparatif", "link": "fr/Decentralized-Password-Manager/Comparatif", "output": "Decentralized-Password-Manager.01-FR-comparatif.md"},
 {"folder": "Dictionaries", "file":"README.md", "layout": "default",
 "title": "Dictionaries", "link": "Dictionaries", "output": "Dictionaries.md"},
 {"folder": "Dictionaries", "file":"README-fr.md", "layout": "default",
