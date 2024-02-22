@@ -11,10 +11,20 @@ if (not path.exists("../Markdown-Table-of-Contents/")):
 #####################
 
 files = [
+{"folder": "3PBDH", "file":"README.md", "layout": "default",
+"title": "3PBDH - Pairing based Diffie-Hellman", "link": "fr/3PBDH", "output": "3PBDH.md"},
 {"folder": "Decentralized-Password-Manager", "file":"README.md", "layout": "default",
 "title": "Decentralized-Password-Manager", "link": "fr/Decentralized-Password-Manager", "output": "Decentralized-Password-Manager.md"},
 {"folder": "Decentralized-Password-Manager", "file":"readme/01-FR-comparatif.md", "layout": "default",
 "title": "Comparatif", "link": "fr/Decentralized-Password-Manager/Comparatif", "output": "Decentralized-Password-Manager.01-FR-comparatif.md"},
+{"folder": "Decentralized-Password-Manager", "file":"readme/02-FR-solutions.md", "layout": "default",
+"title": "Comparatif", "link": "fr/Decentralized-Password-Manager/Solutions", "output": "Decentralized-Password-Manager.02-FR-solutions.md"},
+{"folder": "Decentralized-Password-Manager", "file":"readme/03-FR-specifications.md", "layout": "default",
+"title": "Comparatif", "link": "fr/Decentralized-Password-Manager/Specifications", "output": "Decentralized-Password-Manager.03-FR-specifications.md"},
+{"folder": "Decentralized-Password-Manager", "file":"readme/04-FR-implementation.md", "layout": "default",
+"title": "Comparatif", "link": "fr/Decentralized-Password-Manager/Implementation", "output": "Decentralized-Password-Manager.04-FR-implementation.md"},
+{"folder": "Decentralized-Password-Manager", "file":"readme/05-FR-fonctionnalites.md", "layout": "default",
+"title": "Comparatif", "link": "fr/Decentralized-Password-Manager/Comparatif", "output": "Decentralized-Password-Manager.05-FR-fonctionnalites.md"},
 {"folder": "Dictionaries", "file":"README.md", "layout": "default",
 "title": "Dictionaries", "link": "Dictionaries", "output": "Dictionaries.md"},
 {"folder": "Dictionaries", "file":"README-fr.md", "layout": "default",
