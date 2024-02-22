@@ -10,7 +10,6 @@ popd () {
 cd ..
 for dir in `ls`
   do pushd $dir
-  status=
   if [[ ! -z $(git status --short) ]] ; then
     echo $dir
     git status
