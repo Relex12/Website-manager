@@ -229,6 +229,13 @@
   link: "fr/Maths-for-IT/Constantes-Fondamentales"
   output: "Maths-for-IT.08-FR-Constantes-Fondamentales.md"
 
+- folder: "MD-PDF-survey"
+  file: "README.md"
+  layout: "default"
+  title: "MD to PDF"
+  link: "MD-PDF-survey"
+  output: "MD-PDF-survey.md"
+
 - folder: "Relex12"
   file: "README.md"
   layout: "default"
