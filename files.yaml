@@ -342,6 +342,13 @@
   output: "Wikipedia-Translate-Crawler-fr.md"
 
 - folder: "Word-machine"
+  file: "doc/anagram.html"
+  layout: "null"
+  title: "Word Machine Doc"
+  link: "Word-machine/doc/anagram"
+  output: "Word-machine.doc.anagram.html"
+
+- folder: "Word-machine"
   file: "doc/dictionary.html"
   layout: "null"
   title: "Word Machine Doc"
