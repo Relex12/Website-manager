@@ -363,6 +363,13 @@
   output: "Word-machine.doc.generation.html"
 
 - folder: "Word-machine"
+  file: "doc/tokenization.html"
+  layout: "null"
+  title: "Word Machine Doc"
+  link: "Word-machine/doc/tokenization"
+  output: "Word-machine.doc.tokenization.html"
+
+- folder: "Word-machine"
   file: "doc/word-machine.html"
   layout: "null"
   title: "Word Machine Doc"
