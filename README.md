@@ -2,11 +2,9 @@
 
 Script to auto push in my Relex12.github.io repo pages from all my others repos.
 
-
 ## Usage
 
 In Linux command-line interface, in the right directory : `python3 script.py`
-
 
 ## Disclaimer
 
